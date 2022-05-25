@@ -8,5 +8,5 @@
  
  
 <p align= "center">
-<img src="Autonomous_Vehicle/docs/README_Image/readme_main.jpg" width="900" height="240"></p> 
+<img src="/Autonomus_Vehicle/docs/README_Image/readme_main.png" width="500" height="50"></p> 
  
