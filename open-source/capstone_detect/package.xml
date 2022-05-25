@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>capstone_detect</name>
+  <version>1.0.0</version>
+  <description>
+    AutoRace ROS packages for feature detection with TurtleBot3 Auto
+  </description>
+
+  <author email="todo@todo.todo">todo</author>
+
+  <maintainer email="todo@todo.todo">todo</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>dynamic_reconfigure</depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>move_base_msgs</exec_depend>
+  <exec_depend>tf</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>python-opencv</exec_depend>
+  <exec_depend>python-numpy</exec_depend>
+  <exec_depend>python-enum34</exec_depend>
+</package>
+
