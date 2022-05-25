@@ -164,12 +164,19 @@ class testingLDS() :
             print("Car1", car1_imu_yaw)
             print("car2", self.my_imu_yaw)
 
-
+            if ( ( np.sign(car1_imu_yaw) != np.sign(self.my_imu_yaw + self.imu_offset) )
+                                and ( abs(car1_imu_yaw - (self.my_imu_yaw + self.imu_offset)) > 300 ) ) :
+                error = (car1_imu_yaw + 360) - (self.my_imu_yaw + self.imu_offset)
+            else :
+                error = car1_imu_yaw - (self.my_imu_yaw + self.imu_offset)
+            
+            '''
             if ( ( np.sign(car1_imu_yaw) != np.sign(self.my_imu_yaw + self.imu_offset) )
                                 and ( self.my_imu_yaw + self.imu_offset > 170 ) ) :
                 error = (car1_imu_yaw + 360) - (self.my_imu_yaw + self.imu_offset)
             else :
                 error = car1_imu_yaw - (self.my_imu_yaw + self.imu_offset)
+            '''
 
             print(error)
             angular_z = kp * error + kd * (error - self.last_error)
