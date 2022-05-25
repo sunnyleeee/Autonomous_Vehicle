@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>capstone</name>
+  <version>1.0.0</version>
+  <description>
+    AutoRace ROS packages for AutoRace with TurtleBot3 (meta package)
+  </description>
+
+  <author email="todo@todo.todo">todo</author>
+
+  <maintainer email="todo@todo.todo">todo</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>capstone_camera</exec_depend>
+  <exec_depend>capstone_control</exec_depend>
+  <exec_depend>capstone_core</exec_depend>
+  <exec_depend>capstone_detect</exec_depend>
+  <export><metapackage/></export>
+</package>
