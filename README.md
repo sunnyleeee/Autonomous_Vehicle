@@ -105,14 +105,16 @@
 </br>
 
 ### 오픈소스 활용 내역 </br>
-1️⃣https://github.com/ROBOTIS-GIT/turtlebot3_autorace/tree/master/turtlebot3_autorace_camera</br>
-2️⃣https://github.com/ROBOTIS-GIT/turtlebot3_autorace/tree/master/turtlebot3_autorace_detect</br>
-3️⃣https://github.com/ROBOTIS-GIT/turtlebot3_autorace/tree/master/turtlebot3_autorace_control</br>
-4️⃣https://github.com/ROBOTIS-GIT/turtlebot3_applications/tree/master/turtlebot3_follower</br>
-5️⃣https://github.com/ROBOTIS-GIT/turtlebot3_applications/tree/master/turtlebot3_follow_filter</br>
+1️⃣ https://github.com/ROBOTIS-GIT/turtlebot3_autorace/tree/master/turtlebot3_autorace_camera</br>
+2️⃣ https://github.com/ROBOTIS-GIT/turtlebot3_autorace/tree/master/turtlebot3_autorace_detect</br>
+3️⃣ https://github.com/ROBOTIS-GIT/turtlebot3_autorace/tree/master/turtlebot3_autorace_control</br>
+4️⃣ https://github.com/ROBOTIS-GIT/turtlebot3_applications/tree/master/turtlebot3_follower</br>
+5️⃣ https://github.com/ROBOTIS-GIT/turtlebot3_applications/tree/master/turtlebot3_follow_filter</br>
 
 
 ### 참고문헌
-
+ 📙 이설영, et al. 자율협력주행 환경에서 군집주행에 따른 효과분석. 대한교통학회 학술대회지, 2017, 423-428.
+ 📙 조영; 권경주; 오철. 고속도로 화물차 군집주행 적용구간 선정 연구. 대한교통학회지, 2018, 98-111.
+ 📙 김예진, 정하림, 고우리, 박중규, 윤일수. 메타분석을 이용한 화물차 군집주행의 효과 분석. 한국ITS학회논문지, 2022, 76-90.
 </br></br> 
   
