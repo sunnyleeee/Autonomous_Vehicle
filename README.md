@@ -109,6 +109,20 @@ Step 3. Car2는 카메라를 off하고 자율 주행 하지 않은 채로 Car1�
 <p align= "center">
 <img src="/docs/README_Image/diagram5.png" width="544" height="500"></p>
 
+* 군집 주행 시나리오
+
+Step 1. 출발 전 Car1과 Car2는 일직선 상에 위치한다.
+
+Step 2. Car2가 LIDAR sensor를 이용하여 차간거리를 측정한다.
+
+Step 3. Car1이 출발하는 순간 Car2는 차간 거리만큼 직진한다.
+
+Step 4. 출발과 동시에 Car1의 Gyro sensor data를 buffer에 저장한다.
+
+Step 5. Step 2 완료 후, Remote PC는 Car1과 Car2 간의 Yaw값을 각 비교를 하고 PD 제어를 통해 Car2에 각속도를 Publish(전송)해준다.
+
+Step 6. Car2의 LIDAR sensor를 이용하여, 주행 중 차간 거리가 너무 가까우면 감속한다.
+
 </br>
 
 ### 결과
