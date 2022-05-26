@@ -100,7 +100,7 @@
 
 ### 결과
 * 시연영상
-<p align="center"><img src="/docs/README_Image/video_result.gif" width="600" height ="600"></p>  
+<p align="center"><img src="/docs/README_Image/video_result.gif" width="768" height ="432"></p>  
 
 </br>
 
