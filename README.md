@@ -61,10 +61,10 @@
  </br>
  <hr>
    <p>
-   <img src="/docs/README_Image/line_detecting3.png" width="220" height="180">
-   <img src="/docs/README_Image/line_detecting4.png" width="220" height="180">
-   <img src="/docs/README_Image/line_detecting5.png" width="220" height="180">
-   <img src="/docs/README_Image/line_detecting6.png" width="220" height="180"><p>
+   <img src="/docs/README_Image/line_detecting3.png" width="200" height="180">
+   <img src="/docs/README_Image/line_detecting4.png" width="200" height="180">
+   <img src="/docs/README_Image/line_detecting5.png" width="200" height="180">
+   <img src="/docs/README_Image/line_detecting6.png" width="200" height="180"><p>
  
  >  &nbsp; 좌측부터 1번
 
