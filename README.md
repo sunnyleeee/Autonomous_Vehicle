@@ -79,6 +79,7 @@
    detect_lane에서 구한 도로 중앙 x좌표를 이용하여 car1 카메라의 중앙이 그와 
    같아지도록 PD 제어를 한다. PD제어를 통해 계산된 모터 제어 값을 car1에 publish한다.</br>
 
+
 ### ROS와 OpenCR을 활용한 자율주행
  * 차선인식 설명 넣기
 
@@ -95,8 +96,17 @@
 </br>
 
 ### 오픈소스 활용 내역 
-* Git을 통한 버그/개선사항 수정
-* 데모 모델 생성
+https://github.com/ROBOTIS-GIT/turtlebot3_autorace/tree/master/turtlebot3_autorace_
+camera
+https://github.com/ROBOTIS-GIT/turtlebot3_autorace/tree/master/turtlebot3_autorace_
+detect
+https://github.com/ROBOTIS-GIT/turtlebot3_autorace/tree/master/turtlebot3_autorace_
+control
+https://github.com/ROBOTIS-GIT/turtlebot3_applications/tree/master/turtlebot3_follo
+wer
+https://github.com/ROBOTIS-GIT/turtlebot3_applications/tree/master/turtlebot3_follo
+w_filter
+
 
 ### 참고문헌
 
