@@ -33,10 +33,17 @@
 # 2. 사용기기 및 개발환경
 
 <p align= "center">
- <img src="/docs/README_Image/turtlebot3_burger.jpg" width="700" height="250"></p>  
+ <img src="/docs/README_Image/turtlebot3-burger.png" width="400" height="400"></p>
+ 
+> &nbsp;`TurtleBot3 Burger`를 사용하였습니다. TurtleBot3은 교육, 연구, 취미 및 제품 프로토타이핑에 사용하기 위한 작고 저렴하며 프로그래밍 가능한 **ROS 기반 모바일 로봇**입니다.
+> TurtleBot3는 기계 부품을 어떻게 재구성하고 컴퓨터, 센서 등의 옵션 부품을 사용하느냐에 따라 다양한 방식으로 `커스터마이징`이 가능하여 체택하게 되었습니다.
+</br></br>
+
+<p align= "center">
 <img src="/docs/README_Image/inv.png" width="700" height="250"></p>  
 
->  &nbsp;`ROS`로 Turtle Bot의 구동을 진행시켰다. ROS를 위하여 Ubuntu 16.04 LTS Desktop 이미지를 사용하였다. (18.04는 호환 오류가 발생)
+>  &nbsp;`ROS`로 Turtle Bot의 구동을 진행시켰습니다. ROS를 위하여 Ubuntu 16.04 LTS Desktop 이미지를 사용하였습니다. 
+>  (18.04는 호환 오류가 발생)
 
 </br></br>
 
@@ -46,8 +53,8 @@
    
  </br>
  
-### 2. ROS와 OpenCR을 사용한 자율주행 구현 
- * 
+### 2. ROS와 OpenCR을 사용한 자율주행
+ * 차선인식 설명 넣기
 
  </br>
 
