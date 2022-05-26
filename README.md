@@ -54,8 +54,8 @@
    <img src="/docs/README_Image/calibration1.png" width="350" height="225"></p>
    checkerboard를 이용하여 카메라의 내부 파라미터를 구한다. 계산된 카메라 내부 파라미터를 <mark>.yaml</mark> 파일에 저장한다.</br></br>
    
-    <img src="/docs/README_Image/calibration2.png" width="350" height="350">
-    <img src="/docs/README_Image/calibration_value.png" width="350" height="350"></br>
+    <img src="/docs/README_Image/calibration2.png" width="300" height="300">
+    <img src="/docs/README_Image/calibration_value.png" width="300" height="300"></br>
     
  >  &nbsp; TurtleBot이 내부 파라미터를 구하는 모습
  </br>
