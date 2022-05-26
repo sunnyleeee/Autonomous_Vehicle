@@ -77,7 +77,8 @@
  <p><img src="/docs/README_Image/line_detecting7.png" width="240" height="200"></p>
  * Control_lane
    detect_lane에서 구한 도로 중앙 x좌표를 이용하여 car1 카메라의 중앙이 그와 
-   같아지도록 PD 제어를 한다. PD제어를 통해 계산된 모터 제어 값을 car1에 publish한다.
+   같아지도록 PD 제어를 한다. PD제어를 통해 계산된 모터 제어 값을 car1에 publish한다.</br>
+
 ### ROS와 OpenCR을 활용한 자율주행
  * 차선인식 설명 넣기
 
