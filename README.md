@@ -100,7 +100,7 @@
 2️⃣https://github.com/ROBOTIS-GIT/turtlebot3_autorace/tree/master/turtlebot3_autorace_detect</br>
 3️⃣https://github.com/ROBOTIS-GIT/turtlebot3_autorace/tree/master/turtlebot3_autorace_control</br>
 4️⃣https://github.com/ROBOTIS-GIT/turtlebot3_applications/tree/master/turtlebot3_follower</br>
-5️⃣6️https://github.com/ROBOTIS-GIT/turtlebot3_applications/tree/master/turtlebot3_follow_filter</br>
+5️⃣https://github.com/ROBOTIS-GIT/turtlebot3_applications/tree/master/turtlebot3_follow_filter</br>
 
 
 ### 참고문헌
