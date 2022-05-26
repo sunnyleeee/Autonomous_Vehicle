@@ -89,8 +89,11 @@
 
  </br>
 
-### 중앙관리 시스템을 적용한 군집주행
-* 오픈소스 활용 및 알고리즘 수정  
+### 중앙관리 시스템을 적용한 자율 군집주행
+
+<p align= "center">
+<img src="/docs/README_Image/diagram0.png" width="700" height="380"></p>
+Car1은 자신의 카메라를 켜고 raw image data을 Remote PC로 보낸다. Remote PC로부터 차선 인식 후 계산된 모터 제어 값을 subscribe 하여 자율 주행을 한다. Car2는 카메라를 off하고 자율 주행 하지 않은 채로 Car1에 의존적으로 자율 군집주행을 한다. 이기종 하드웨어 간의 원활한 데이터 송수신, 처리를 위해 로봇 응용 소프트웨어 개발에 주로 사용되는 메타운영체제인 ROS 를 이용하였다. 위 사진은 Remote PC가 차선 인식과 군집 주행을 위한 연산 등의 메인 처리를 담당하며, Car1,2의 raspberry pi는 카메라 이미지, 라이다 센서 등의 데이터를 Remote PC로 publish 하거나 모터 제어 값을 Remote PC로부터 subscribe 하는 구조를 도식화 한 것이다.
 
 </br>
 
