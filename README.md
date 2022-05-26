@@ -75,13 +75,16 @@
    도로 Top View 이미지를 BGR모델에서 HSV모델로 변형 시킨 후, 노란색과 하얀색의 HSV 
    범위를 적당하게 설정하여 왼쪽, 오른쪽 차선 마스크를 구한다.
  <p><img src="/docs/README_Image/line_detecting7.png" width="240" height="200"></p>
- * Control_lane
-   detect_lane에서 구한 도로 중앙 x좌표를 이용하여 car1 카메라의 중앙이 그와 
-   같아지도록 PD 제어를 한다. PD제어를 통해 계산된 모터 제어 값을 car1에 publish한다.</br>
-
+ 
+ >  &nbsp; **[결과]** 각 마스크를 이용하여 왼쪽 차선, 오른쪽 차선 x좌표를 구하고, 이 두 값의 평균으로 도로 중앙에 해당하는 x좌표를 구한다
+ 
 
 ### ROS와 OpenCR을 활용한 자율주행
- * 차선인식 설명 넣기
+<p align= "center">
+<img src="/docs/README_Image/diagram4.png" width="700" height="250"></p>  
+* Control_lane </br>
+   Detect_lane에서 구한 도로 중앙 x좌표를 이용하여 car1 카메라의 중앙이 그와 
+   같아지도록 PD 제어를 한다. PD제어를 통해 계산된 모터 제어 값을 car1에 publish한다.</br>
 
  </br>
 
