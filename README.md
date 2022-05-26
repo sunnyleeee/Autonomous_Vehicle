@@ -99,7 +99,8 @@
 </br>
 
 ### 결과
-* 결과 확인   
+* 시연영상
+<p align="center"><img src="/Readme_image/video_result.gif" width="600" height ="600"></p>  
 
 </br>
 
