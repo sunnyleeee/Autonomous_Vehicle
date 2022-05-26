@@ -74,7 +74,7 @@
  * Detect_lane (🖼 3, 4)</br>
    도로 Top View 이미지를 BGR모델에서 HSV모델로 변형 시킨 후, 노란색과 하얀색의 HSV 
    범위를 적당하게 설정하여 왼쪽, 오른쪽 차선 마스크를 구한다.
- <p><img src="/docs/README_Image/line_detecting7.png" width="240" height="200"></p>
+ <p align = "center"><img src="/docs/README_Image/line_detecting7.png" width="340" height="300"></p>
  
  >  &nbsp; **[결과]** 각 마스크를 이용하여 왼쪽 차선, 오른쪽 차선 x좌표를 구하고, 이 두 값의 평균으로 도로 중앙에 해당하는 x좌표를 구한다
  
