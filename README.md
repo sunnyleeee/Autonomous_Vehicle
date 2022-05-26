@@ -49,30 +49,54 @@
 
 # 3. 프로젝트 내용  
 ### OpenCV를 이용한 Line-detection
- * 딥러닝을 활용한 Line-detection 모델 제작 **(실패)**
+ * Intrinsic_calibration </br>
+   <img src="/docs/README_Image/calibration0.png" width="400" height="250">
+   <img src="/docs/README_Image/calibration1.png" width="400" height="250"></p>
+   checkerboard를 이용하여 카메라의 내부 파라미터를 구한다. 계산된 카메라 내부 파라미터를 <mark>.yaml</mark> 파일에 저장한다.</br></br>
    
+    <img src="/docs/README_Image/calibration2.png" width="400" height="400">
+    <img src="/docs/README_Image/calibration_value.png" width="400" height="400"></br>
+    
+ >  &nbsp; TurtleBot이 내부 파라미터를 구하는 모습
  </br>
+   <p>
+   <img src="/docs/README_Image/line_detecting3.png" width="240" height="200">
+   <img src="/docs/README_Image/line_detecting4.png" width="240" height="200">
+   <img src="/docs/README_Image/line_detecting5.png" width="240" height="200">
+   <img src="/docs/README_Image/line_detecting6.png" width="240" height="200"><p>
  
-### 2. ROS와 OpenCR을 활용한 자율주행
+ >  &nbsp; 좌측부터 1번임
+
+ * Extrinsic_calibration (🖼 1, 2)</br> 
+   카메라가 보는 각도의 image에 특정 4개 좌표를 구한다. openCV의 findHomography 함수를 이용하여 앞서 구한 특정 4개의 좌표를 내가 원하는 4개 </br>
+   좌표로 변환 시키는 변환 행렬을 구한다. 이 변환 행렬을 기존 이미지에 적용하여 Top View 이미지 형태로 변환 시킨다.
+ * Detect_lane (🖼 3, 4)</br>
+   도로 Top View 이미지를 BGR모델에서 HSV모델로 변형 시킨 후, 노란색과 하얀색의 HSV 
+   범위를 적당하게 설정하여 왼쪽, 오른쪽 차선 마스크를 구한다.
+ <p><img src="/docs/README_Image/line_detecting7.png" width="240" height="200"></p>
+ * Control_lane
+   detect_lane에서 구한 도로 중앙 x좌표를 이용하여 car1 카메라의 중앙이 그와 
+   같아지도록 PD 제어를 한다. PD제어를 통해 계산된 모터 제어 값을 car1에 publish한다.
+### ROS와 OpenCR을 활용한 자율주행
  * 차선인식 설명 넣기
 
  </br>
 
-### 3. 중앙관리 시스템을 활용한 군집주행
+### 중앙관리 시스템을 적용한 군집주행
 * 오픈소스 활용 및 알고리즘 수정  
 
 </br>
 
-### 4.결과
+### 결과
 * 결과 확인   
 
 </br>
 
-### 5.오픈소스 활용 내역 
+### 오픈소스 활용 내역 
 * Git을 통한 버그/개선사항 수정
 * 데모 모델 생성
 
-### 5. 참고문헌
+### 참고문헌
 
 </br></br> 
   
