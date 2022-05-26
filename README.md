@@ -42,7 +42,7 @@
 <p align= "center">
 <img src="/docs/README_Image/inv.png" width="700" height="250"></p>  
 
->  &nbsp;`ROS`로 Turtle Bot의 구동을 진행시켰다. ROS를 위하여 Ubuntu 16.04 LTS Desktop 이미지를 사용하였다. 
+>  &nbsp;`ROS`로 Turtle Bot의 구동을 진행했다. ROS를 위하여 Ubuntu 16.04 LTS Desktop 이미지를 사용하였다. 
 >  (18.04는 호환 오류가 발생)
 
 </br></br>
@@ -52,7 +52,7 @@
  * Intrinsic_calibration </br>
    <img src="/docs/README_Image/calibration0.png" width="350" height="225">
    <img src="/docs/README_Image/calibration1.png" width="350" height="225"></p>
-   checkerboard를 이용하여 카메라의 내부 파라미터를 구한다. 계산된 카메라 내부 파라미터를 <mark>.yaml</mark> 파일에 저장한다.</br></br>
+   checkerboard를 이용하여 카메라의 내부 파라미터를 구한다. 계산된 카메라 내부 파라미터를 .yaml 파일에 저장한다.</br></br>
    
     <img src="/docs/README_Image/calibration2.png" width="300" height="300">
     <img src="/docs/README_Image/calibration_value.png" width="300" height="300"></br>
@@ -70,9 +70,9 @@
 
  * Extrinsic_calibration (🖼 1, 2)</br> 
    카메라가 보는 각도의 image에 특정 4개 좌표를 구한다. openCV의 findHomography 함수를 이용하여 앞서 구한 특정 4개의 좌표를 내가 원하는 4개 </br>
-   좌표로 변환 시키는 변환 행렬을 구한다. 이 변환 행렬을 기존 이미지에 적용하여 Top View 이미지 형태로 변환 시킨다.
+   좌표로 변환시키는 변환 행렬을 구한다. 이 변환 행렬을 기존 이미지에 적용하여 Top View 이미지 형태로 변환시킨다.
  * Detect_lane (🖼 3, 4)</br>
-   도로 Top View 이미지를 BGR모델에서 HSV모델로 변형 시킨 후, 노란색과 하얀색의 HSV 
+   도로 Top View 이미지를 BGR모델에서 HSV모델로 변형시킨 후, 노란색과 하얀색의 HSV 
    범위를 적당하게 설정하여 왼쪽, 오른쪽 차선 마스크를 구한다.
  <p align = "center"><img src="/docs/README_Image/line_detecting7.png" width="340" height="300"></p>
  
@@ -84,8 +84,8 @@
 <img src="/docs/README_Image/diagram4.png" width="700" height="250"></p>
 
 * Control_lane </br>
-   Detect_lane에서 구한 도로 중앙 x좌표를 이용하여 car1 카메라의 중앙이 그와 
-   같아지도록 PD 제어를 한다. PD제어를 통해 계산된 모터 제어 값을 car1에 publish한다.</br>
+   Detect_lane에서 구한 도로 중앙 x좌표를 이용하여 car 1 카메라의 중앙이 그와 
+   같아지도록 PD 제어를 한다. PD제어를 통해 계산된 모터 제어 값을 car 1에 publish 한다.</br>
 
  </br>
 
@@ -93,13 +93,13 @@
 
 <p align= "center">
 <img src="/docs/README_Image/diagram0.png" width="700" height="380"></p>
-Step 1. Car1은 자신의 카메라를 켜고 raw image data을 Remote PC로 보낸다.</br></br>
-Step 2. Remote PC로부터 차선 인식 후 계산된 모터 제어 값을 subscribe 하여 자율 주행을 한다.</br></br>
-Step 3. Car2는 카메라를 off하고 자율 주행 하지 않은 채로 Car1에 의존적으로 자율 군집주행을 한다.</br></br>
+Step 1. Car 1은 자신의 카메라를 켜고 raw image data를 Remote PC로 보낸다.</br></br>
+Step 2. Remote PC로부터 차선 인식 후 계산된 모터 제어 값을 subscribe 하여 자율 주행한다.</br></br>
+Step 3. Car 2는 카메라를 off하고 자율주행 하지 않은 채로 Car 1에 의존적으로 자율 군집주행을 한다.</br></br>
 </br>
 
->  &nbsp;이기종 하드웨어 간의 원활한 데이터 송수신, 처리를 위해 로봇 응용 소프트웨어 개발에 주로 사용되는 메타운영체제인 ROS 를 이용하였다. 
->  Remote PC는 `중앙 관리 시스템`으로서 차선 인식과 군집주행 위한 연산 등의 메인 처리를 담당한다. Car1, 2의 raspberry pi는 카메라 이미지, 라이다 센서 등의 데이터를 Remote PC로 
+>  &nbsp;이기종 하드웨어 간의 원활한 데이터 송수신, 처리를 위해 로봇 응용 소프트웨어 개발에 주로 사용되는 메타 운영체제인 ROS를 이용하였다. 
+>  Remote PC는 `중앙 관리 시스템`으로서 차선 인식과 군집주행 위한 연산 등의 메인 처리를 담당한다. Car 1, 2의 raspberry pi는 카메라 이미지, 라이다 센서 등의 데이터를 Remote PC로 
 >  publish 하거나 모터 제어 값을 Remote PC로부터 subscribe 하는 구조이다.
 
 </br>
