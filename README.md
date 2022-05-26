@@ -27,7 +27,7 @@
 <img src=/docs/README_Image/SUB.png width=600 height=400></p> 
 
 
-> &nbsp;코로나가 지속됨에 따라 많은 사람들이 오프라인에서의 소비보다 **온라인에서 소비**를 하는 경우가 더 많아졌다. <br>즉, 온라인 소비가 많아짐에 따라 **운송업 업무가 증가**했다. 위드코로나가 시작됨에 따라 기존의 소비습관으로 돌아가 운송업무 양에 문제가 생길 수 있을 것이라고 생각할 수 있다. 하지만 현재 일상이 회복되고 있음에도 **사람들은 집에서 시켜 집에서 받는 문화에 익숙해졌다.** 그리하여 에이블리, SSG 위드 코로나 이후 동일하거나 그 이상의 실적을 올리기도 하였다. 이렇듯 바뀌어진 소비습관을 기반으로 운송업에서 `중앙 집중형 자율 군집주행`을 적용시킨다면 인건비 및 연비 감소 등 여러 이점이 있을 것이라 생각하였다.
+> &nbsp;코로나가 지속됨에 따라 많은 사람들이 오프라인에서의 소비보다 **온라인에서 소비**를 하는 경우가 더 많아졌다. <br>즉, 온라인 소비가 많아짐에 따라 **운송업 업무가 증가**했다. 위드코로나가 시작됨에 따라 기존의 소비 습관으로 돌아가 운송업무량에 문제가 생길 수 있다고 생각할 수 있다. 하지만 현재 일상이 회복되고 있음에도 **사람들은 집에서 시켜 집에서 받는 문화에 익숙해졌다.** 그리하여 에이블리, SSG 위드 코로나 이후 동일하거나 그 이상의 실적을 올리기도 하였다. 이렇듯 바뀐 소비 습관을 기반으로 운송업에서 `중앙 집중형 자율 군집주행`을 적용한다면 인건비 및 연비 감소 등 여러 이점이 있다.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  
 # 2. 사용기기 및 개발환경
@@ -35,14 +35,14 @@
 <p align= "center">
  <img src="/docs/README_Image/turtlebot3-burger.png" width="400" height="400"></p>
  
-> &nbsp;`TurtleBot3 Burger`를 사용하였습니다. TurtleBot3은 교육, 연구, 취미 및 제품 프로토타이핑에 사용하기 위한 작고 저렴하며 프로그래밍 가능한 **ROS 기반 모바일 로봇**입니다.
-> TurtleBot3는 기계 부품을 어떻게 재구성하고 컴퓨터, 센서 등의 옵션 부품을 사용하느냐에 따라 다양한 방식으로 `커스터마이징`이 가능하여 체택하게 되었습니다.
+> &nbsp;`TurtleBot3 Burger`를 사용하였다. TurtleBot3은 교육, 연구, 취미 및 제품 프로토타이핑에 사용하기 위한 작고 저렴하며 프로그래밍 가능한 **ROS 기반 모바일 로봇**이다.
+> TurtleBot3는 기계 부품을 어떻게 재구성하고 컴퓨터, 센서 등의 옵션 부품을 사용하느냐에 따라 다양한 방식으로 `커스터마이징`이 가능하여 체택하게 되었다.
 </br></br>
 
 <p align= "center">
 <img src="/docs/README_Image/inv.png" width="700" height="250"></p>  
 
->  &nbsp;`ROS`로 Turtle Bot의 구동을 진행시켰습니다. ROS를 위하여 Ubuntu 16.04 LTS Desktop 이미지를 사용하였습니다. 
+>  &nbsp;`ROS`로 Turtle Bot의 구동을 진행시켰다. ROS를 위하여 Ubuntu 16.04 LTS Desktop 이미지를 사용하였다. 
 >  (18.04는 호환 오류가 발생)
 
 </br></br>
@@ -111,17 +111,17 @@ Step 3. Car2는 카메라를 off하고 자율 주행 하지 않은 채로 Car1�
 
 * 군집 주행 시나리오
 
-Step 1. 출발 전 Car1과 Car2는 일직선 상에 위치한다.
+Step 1. 출발 전 Car 1과 Car 2는 일직선상에 위치한다.
 
-Step 2. Car2가 LIDAR sensor를 이용하여 차간거리를 측정한다.
+Step 2. Car 2가 LIDAR sensor를 이용하여 차간거리를 측정한다.
 
-Step 3. Car1이 출발하는 순간 Car2는 차간 거리만큼 직진한다.
+Step 3. Car 1이 출발하는 순간 Car 2는 차간 거리만큼 직진한다.
 
-Step 4. 출발과 동시에 Car1의 Gyro sensor data를 buffer에 저장한다.
+Step 4. 출발과 동시에 Car 1의 Gyro sensor data를 buffer에 저장한다.
 
-Step 5. Step 2 완료 후, Remote PC는 Car1과 Car2 간의 Yaw값을 각 비교를 하고 PD 제어를 통해 Car2에 각속도를 Publish(전송)해준다.
+Step 5. Step 2 완료 후, Remote PC는 Car 1과 Car 2 간의 Yaw값을 각각 비교를 하고 PD 제어를 통해 Car 2에 각속도를 Publish(전송) 해준다.
 
-Step 6. Car2의 LIDAR sensor를 이용하여, 주행 중 차간 거리가 너무 가까우면 감속한다.
+Step 6. Car 2의 LIDAR sensor를 이용하여, 주행 중 차간 거리가 너무 가까우면 감속한다.
 
 </br>
 
