@@ -50,23 +50,23 @@
 # 3. 프로젝트 내용  
 ### OpenCV를 이용한 Line-detection
  * Intrinsic_calibration </br>
-   <img src="/docs/README_Image/calibration0.png" width="400" height="250">
-   <img src="/docs/README_Image/calibration1.png" width="400" height="250"></p>
+   <img src="/docs/README_Image/calibration0.png" width="350" height="225">
+   <img src="/docs/README_Image/calibration1.png" width="350" height="225"></p>
    checkerboard를 이용하여 카메라의 내부 파라미터를 구한다. 계산된 카메라 내부 파라미터를 <mark>.yaml</mark> 파일에 저장한다.</br></br>
    
-    <img src="/docs/README_Image/calibration2.png" width="400" height="400">
-    <img src="/docs/README_Image/calibration_value.png" width="400" height="400"></br>
+    <img src="/docs/README_Image/calibration2.png" width="350" height="350">
+    <img src="/docs/README_Image/calibration_value.png" width="350" height="350"></br>
     
  >  &nbsp; TurtleBot이 내부 파라미터를 구하는 모습
  </br>
  <hr>
    <p>
-   <img src="/docs/README_Image/line_detecting3.png" width="240" height="200">
-   <img src="/docs/README_Image/line_detecting4.png" width="240" height="200">
-   <img src="/docs/README_Image/line_detecting5.png" width="240" height="200">
-   <img src="/docs/README_Image/line_detecting6.png" width="240" height="200"><p>
+   <img src="/docs/README_Image/line_detecting3.png" width="220" height="180">
+   <img src="/docs/README_Image/line_detecting4.png" width="220" height="180">
+   <img src="/docs/README_Image/line_detecting5.png" width="220" height="180">
+   <img src="/docs/README_Image/line_detecting6.png" width="220" height="180"><p>
  
- >  &nbsp; 좌측부터 1번임
+ >  &nbsp; 좌측부터 1번
 
  * Extrinsic_calibration (🖼 1, 2)</br> 
    카메라가 보는 각도의 image에 특정 4개 좌표를 구한다. openCV의 findHomography 함수를 이용하여 앞서 구한 특정 4개의 좌표를 내가 원하는 4개 </br>
